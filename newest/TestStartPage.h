@@ -1,3 +1,4 @@
+
 #ifndef _TESTSTARTPAGE_H_
 #define _TESTSTARTPAGE_H_
 
@@ -11,11 +12,11 @@ public:
 	CollisonList cl;
 //	Sprite* sprite;
 public:
-	//Ã¿Ò»¸ö³¡¾°¹Ø¿¨¶¼»áÓĞÒ»¸öÅö×²ÁĞ±í
+	//æ¯ä¸€ä¸ªåœºæ™¯å…³å¡éƒ½ä¼šæœ‰ä¸€ä¸ªç¢°æ’åˆ—è¡¨
 	void initCL();
-	//¸üĞÂ¹ÖÎïÅö×²ÁĞ±í
+	//æ›´æ–°æ€ªç‰©ç¢°æ’åˆ—è¡¨
 	void updateCL();
-	//¼ì²éÍæ¼ÒºÍCLÖĞµÄÅö×²
+	//æ£€æŸ¥ç©å®¶å’ŒCLä¸­çš„ç¢°æ’
 	PandS cheakCL(float x1, float y1, int w1, int h1);
 
 	static cocos2d::Scene* createNewScene();
@@ -26,6 +27,8 @@ public:
 	//here is keyboard scene code from game from scratch.com
 	virtual void update(float delta) override;
 
+	void killMonsters();
+	
 	bool isKeyPressed(cocos2d::EventKeyboard::KeyCode);
 	double keyPressedDuration(cocos2d::EventKeyboard::KeyCode);
 
